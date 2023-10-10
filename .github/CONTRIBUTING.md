@@ -343,6 +343,14 @@ Password: demo_password!
 # yarn start # http://localhost:8080
 ```
 
+If you want to open the dev container inside VS code
+
+1. [Install the remote containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+2. Run the "Attach to running container" command
+    - Open command palette (Ctrl + Shift + P / Shift + Cmd + P) and search for "Attach to running container"
+3. Run the `/lightdash-app-lightdash-dev-1` container.
+4. Open the `/usr/app/` folder in VS Code (File -> Open Folder -> `/usr/app/`)
+
 Notes:
 
 -   If you change files inside `/packages/common` you should run `yarn common-build` before `yarn dev`
