@@ -592,4 +592,13 @@ const successHandler = () => {
     process.exit(0);
 };
 
+process.on("SIGINT", async () => {
+  console.log("Caught interrupt signal. Cleaning up...");
+
+  await stopPreviewHandler();
+
+  console.log("Cleanup done.");
+  process.exit(0);
+});
+
 program.parseAsync().then(successHandler).catch(errorHandler);
