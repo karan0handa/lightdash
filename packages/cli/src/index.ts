@@ -13,7 +13,7 @@ import {
     previewHandler,
     startPreviewHandler,
     stopPreviewHandler,
-} from './handlers/preview';
+} from './handlers/preview'; // Here is the import statement for stopPreviewHandler
 import { setProjectHandler } from './handlers/setProject';
 import { validateHandler } from './handlers/validate';
 import * as styles from './styles';
