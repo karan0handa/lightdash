@@ -17,11 +17,13 @@ import {
     IconCopy,
     IconDots,
     IconFolders,
+    IconHistory,
     IconLayoutGridAdd,
     IconPencil,
     IconSend,
     IconTrash,
 } from '@tabler/icons-react';
+import { useFeatureFlagEnabled } from 'posthog-js/react';
 import { FC, useEffect, useState } from 'react';
 import { useHistory, useLocation, useParams } from 'react-router-dom';
 import { useToggle } from 'react-use';
@@ -72,6 +74,9 @@ const SavedChartsHeader: FC = () => {
     const dashboardUuid = useSearchParams('fromDashboard');
     const isFromDashboard = !!dashboardUuid;
     const spaceUuid = useSearchParams('fromSpace');
+    const isChartVersionHistoryEnabled = useFeatureFlagEnabled(
+        'chart-version-history',
+    );
 
     const history = useHistory();
     const isEditMode = useExplorerContext(
@@ -485,6 +490,18 @@ const SavedChartsHeader: FC = () => {
                                             }
                                         />
                                     ) : null}
+                                    {userCanManageCharts &&
+                                        isChartVersionHistoryEnabled && (
+                                            <MenuItem2
+                                                icon={<IconHistory />}
+                                                text="Version history"
+                                                onClick={() =>
+                                                    history.push({
+                                                        pathname: `/projects/${savedChart?.projectUuid}/saved/${savedChart?.uuid}/history`,
+                                                    })
+                                                }
+                                            />
+                                        )}
                                     <Divider />
                                     <Tooltip
                                         disabled={!getIsEditingDashboardChart()}
