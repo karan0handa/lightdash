@@ -1,3 +1,52 @@
+# [0.811.0](https://github.com/lightdash/lightdash/compare/0.810.0...0.811.0) (2023-10-13)
+
+
+### Features
+
+* add --name to preview ([#7456](https://github.com/lightdash/lightdash/issues/7456)) ([7a11d31](https://github.com/lightdash/lightdash/commit/7a11d318cf7d48fc053c3ffbba9f3ea276170607))
+
+# [0.810.0](https://github.com/lightdash/lightdash/compare/0.809.0...0.810.0) (2023-10-13)
+
+
+### Features
+
+* filter inputs - operator inputs to mantine ([#7458](https://github.com/lightdash/lightdash/issues/7458)) ([b78a878](https://github.com/lightdash/lightdash/commit/b78a878bd4724dfdccafb96c3cd674e5e0c04b0e))
+
+# [0.809.0](https://github.com/lightdash/lightdash/compare/0.808.2...0.809.0) (2023-10-13)
+
+
+### Features
+
+* chart version history days limit env var ([#7450](https://github.com/lightdash/lightdash/issues/7450)) ([3e1f0ec](https://github.com/lightdash/lightdash/commit/3e1f0ec487edacb2093f2618eab61575735f1d8f))
+
+## [0.808.2](https://github.com/lightdash/lightdash/compare/0.808.1...0.808.2) (2023-10-13)
+
+
+### Bug Fixes
+
+* adding missing await to query ([#7453](https://github.com/lightdash/lightdash/issues/7453)) ([1ac7a28](https://github.com/lightdash/lightdash/commit/1ac7a281489c58b29f3777a4acc9daba6a0511a0))
+
+## [0.808.1](https://github.com/lightdash/lightdash/compare/0.808.0...0.808.1) (2023-10-13)
+
+
+### Bug Fixes
+
+* posthog analytics feature layout ([#7460](https://github.com/lightdash/lightdash/issues/7460)) ([f60e385](https://github.com/lightdash/lightdash/commit/f60e3851102a6d5d6e6295987351a30bdaaf94bf))
+
+# [0.808.0](https://github.com/lightdash/lightdash/compare/0.807.1...0.808.0) (2023-10-13)
+
+
+### Features
+
+* chat history feature flag ([#7449](https://github.com/lightdash/lightdash/issues/7449)) ([4b3da00](https://github.com/lightdash/lightdash/commit/4b3da00f185b4babc852418966391d5a93418be2))
+
+## [0.807.1](https://github.com/lightdash/lightdash/compare/0.807.0...0.807.1) (2023-10-13)
+
+
+### Bug Fixes
+
+* always show current version in chart history ([#7448](https://github.com/lightdash/lightdash/issues/7448)) ([52de0c4](https://github.com/lightdash/lightdash/commit/52de0c4c5113fa8bb75fcdad7d3ed3158d2af30c))
+
 # [0.807.0](https://github.com/lightdash/lightdash/compare/0.806.0...0.807.0) (2023-10-12)
 
 
