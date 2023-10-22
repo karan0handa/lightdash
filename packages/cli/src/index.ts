@@ -13,7 +13,7 @@ import {
     previewHandler,
     startPreviewHandler,
     stopPreviewHandler,
-} from './handlers/preview';
+} from './handlers/preview'; // Here is the import statement for stopPreviewHandler
 import { setProjectHandler } from './handlers/setProject';
 import { validateHandler } from './handlers/validate';
 import * as styles from './styles';
@@ -595,5 +595,14 @@ const successHandler = () => {
     console.error(`Done 🕶`);
     process.exit(0);
 };
+
+process.on("SIGINT", async () => {
+  console.log("Caught interrupt signal. Cleaning up...");
+
+  await stopPreviewHandler();
+
+  console.log("Cleanup done.");
+  process.exit(0);
+});
 
 program.parseAsync().then(successHandler).catch(errorHandler);
