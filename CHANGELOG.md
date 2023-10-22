@@ -1,3 +1,32 @@
+# [0.816.0](https://github.com/lightdash/lightdash/compare/0.815.0...0.816.0) (2023-10-20)
+
+
+### Features
+
+* add stale time and cacheTime to useExplore ([#7567](https://github.com/lightdash/lightdash/issues/7567)) ([478d936](https://github.com/lightdash/lightdash/commit/478d936cbe4c429bc72e2f23e51521737aae4b5a))
+
+# [0.815.0](https://github.com/lightdash/lightdash/compare/0.814.5...0.815.0) (2023-10-20)
+
+
+### Features
+
+* add google disclosure ([#7541](https://github.com/lightdash/lightdash/issues/7541)) ([76870c9](https://github.com/lightdash/lightdash/commit/76870c951841fb61fb28e30623f52e790b1fbd44))
+
+## [0.814.5](https://github.com/lightdash/lightdash/compare/0.814.4...0.814.5) (2023-10-19)
+
+
+### Bug Fixes
+
+* add indices to saved chart tables ([#7556](https://github.com/lightdash/lightdash/issues/7556)) ([561c9f0](https://github.com/lightdash/lightdash/commit/561c9f0b3f4c6d85867e6873911dfe0abde182c0))
+* do not include private resources if admin ([#7555](https://github.com/lightdash/lightdash/issues/7555)) ([8d4b46b](https://github.com/lightdash/lightdash/commit/8d4b46b0eebcbc3699a8170dafe692375238b897))
+
+## [0.814.4](https://github.com/lightdash/lightdash/compare/0.814.3...0.814.4) (2023-10-19)
+
+
+### Bug Fixes
+
+* incorrectly created shared space when private selected ([#7476](https://github.com/lightdash/lightdash/issues/7476)) ([648ebc3](https://github.com/lightdash/lightdash/commit/648ebc3893804292b3e72d400d4a81849259dc43))
+
 ## [0.814.3](https://github.com/lightdash/lightdash/compare/0.814.2...0.814.3) (2023-10-19)
 
 
